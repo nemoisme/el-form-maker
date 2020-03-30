@@ -1,28 +1,15 @@
 import Vue from 'vue'
-import App from './app'
-import vueRouer from "vue-router";
-import ElFormMaker from '../package/el-form-maker.vue'
-import demo1 from './demos/demo1.vue'
-const routes = [
-  {
-    path: "/demos/demo1",
-    component: demo1
-  },
-  // {
-  //   path: "/demos/demo2",
-  //   component: () => import("./demos/demo2.vue")
-  // }
-];
-const router = new vueRouer({
-  mode: "hash",
-  routes
-});
-
-Vue.use(vueRouer)
-
-Vue.component(ElFormMaker.name, ElFormMaker)
+import App from './App.vue'
+import ElementUI from 'element-ui';
+// import ElFormMaker from '../packages/el-form-maker/index'
+const ElFormMaker = require('../lib/el-form-maker.umd')['default']
+console.log(ElFormMaker,'ElFormMaker')
+// const ElFormMaker = require('../lib/el-validate-table.umd.js')['default']
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI)
+Vue.config.productionTip = false
+Vue.component('el-form-maker',ElFormMaker)
 
 new Vue({
-  router,
-  render: h => h(App)
+  render: h => h(App),
 }).$mount('#app')

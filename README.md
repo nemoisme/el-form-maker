@@ -1,6 +1,10 @@
 # el-form-maker
 基于 element-ui  封装的表单生成器
 
+```sh
+  yarn add el-form-maker
+```
+
 ## 目录
 * [介绍](#介绍)
 * [特点](#特点)
