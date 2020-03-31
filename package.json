@@ -10,9 +10,14 @@
     "type": "git",
     "url": "https://github.com/nemoisme/el-form-maker.git"
   },
-  "keyword": [
+  "keywords": [
     "vue",
-    "element-ui"
+    "element-ui",
+    "el-form-maker"
+  ],
+  "files": [
+    "packages",
+    "lib"
   ],
   "scripts": {
     "dev": "vue-cli-service serve",
@@ -21,8 +26,14 @@
     "lib": "vue-cli-service build --target lib --name el-form-maker --dest lib packages/index.js"
   },
   "dependencies": {
+    "babel-plugin-component": "^1.1.1",
     "core-js": "^3.6.4",
     "element-ui": "^2.13.0",
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.get": "^4.4.2",
+    "lodash.groupby": "^4.6.0",
+    "lodash.isobject": "^3.0.2",
+    "lodash.set": "^4.3.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {
