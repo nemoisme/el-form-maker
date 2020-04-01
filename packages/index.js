@@ -1,4 +1,4 @@
-import ElFormMaker from './el-form-maker/index'
+import ElFormMaker from './el-form-maker/index.vue'
 
 // Declare install function executed by Vue.use()
 export function install(Vue) {
