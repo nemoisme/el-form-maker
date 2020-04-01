@@ -1,9 +1,9 @@
 {
   "name": "el-form-maker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "description": "a lib about form base on element-ui",
-  "main": "lib/el-form-maker.umd.min.js",
+  "main": "lib/el-form-maker.js",
   "license": "MIT",
   "author": "nemoisme<nemo_ambitioner@163.com>",
   "repository": {
